@@ -1356,7 +1356,7 @@ a:hover .nav-title,
  * It only works with JavaScript.
  */
 
-.js .main-navigation ul,
+//.js .main-navigation ul,
 .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
@@ -4325,4 +4325,17 @@ p > object:only-child {
 	.site-footer {
 		padding: 0;
 	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.menu-toggle {display: none;}
+	.menu {display: block;}
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle {display: block;}
+	.menu {display: none;}
+	.menu-show {display: block;}
+	.menu-hide {display: none;}
 }

@@ -21,6 +21,7 @@
 		}
 	</style>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" id="font-awesome-css" href="assets/css/font-awesome.css" type="text/css" media="all">
 	<link rel="stylesheet" id="twentyseventeen-style-css" href="assets/css/style.css" type="text/css" media="all">
 	<!-- Dark mode -->
@@ -74,9 +75,9 @@
 			<div class="navigation-top">
 				<div class="wrap">
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
-						<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+						<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false" onclick="myExpand()">
 							<svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xlink:href="#icon-bars"></use> </svg>
-							<svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg>Menu
+							<svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg><i class="fa fa-bars"></i> Menu
 						</button>
 						<div class="menu-menu-1-container">
 							<ul id="top-menu" class="menu">
@@ -89,7 +90,6 @@
 					</nav><!-- #site-navigation -->
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
-		
 		</header><!-- #masthead -->
 
 	
@@ -146,5 +146,17 @@
 			</footer><!-- #colophon -->
 		</div><!-- .site-content-contain -->
 	</div><!-- #page -->
+
+	<script>
+		function myExpand() {
+			var x = document.getElementById("top-menu");
+			if (x.className === "menu") {
+				x.className += " menu-show";
+			} else {
+				x.className = "menu";
+			}
+		}
+	</script>
+
 </body>
 </html>
